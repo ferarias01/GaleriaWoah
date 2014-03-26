@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Galeria Woah!</title>
+        <link rel="stylesheet" type="text/css" href="recursos/css/style.css"/>	        
+        <script type="text/javascript" src="recursos/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="recursos/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="recursos/js/script.js"></script>
+        <script type="text/javascript" src="recursos/js/facebook.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="recursos/css/styleDialog.css"/>	  
+        <script type="text/javascript" src="recursos/js/scriptDialog.js"></script>
+    </head>
+    <body id='body'>
+        <div id="warp">
+            <header>
+                <div id="maskbanner" >
+                    <div id="banner"></div>
+                    <div id="loginfb">
+                        <div id="fbcontainer">
+                            <div class="fb-login-button" 
+                                 data-max-rows="1" 
+                                 data-size="medium" 
+                                 data-show-faces="false" 
+                                 data-auto-logout-link="true"
+                                 ></div>
+                        </div>
+                        <div>
+                            <div><img id="fotoPerfil" src="" /></div>
+                            <div id="nombreUsuario"></div>                        
+                        </div>
+                    </div>
+                </div>
+                <div id="maskalbum">
+
+                    <div id="album"></div>
+                    <div id="albumControl">Album&nbsp;<a id="backAlbum" title="Albumes Anterioroes" href="javascript:void(0);">&nbsp;<&nbsp;</a>&nbsp;<a id="nextAlbum" title="Albumes Siguientes" href="javascript:void(0);">&nbsp;>&nbsp;</a></div>
+                </div>
+            </header>
+            <aside>
+                <div id="mascara">
+                    <div id="bigphoto" title="Click para Temporizador">
+
+                    </div>
+                    <div id="pop" class="hidden">
+                        <div id="popinterno">
+                            <a id="close" href="javascript:void(0);">Cerrar</a>
+                            <div id="warppop" >
+                                <div id="fotopop">
+                                    <img id="imagenpop" src="http://fc07.deviantart.net/fs71/i/2014/006/5/1/cryaotic__music_animation_by_toono-d714q9e.png" />
+                                    <div id="captionpop">
+                                        <p id="caption"></p>
+                                    </div>
+                                </div>
+                                <div id="commentarios">
+                                    <div class="fb-comments" data-href="http://example.com/comments" data-width="360px" data-numposts="3" data-colorscheme="light"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+            </aside>
+            <article>
+                <div id="thumbnails">
+                    <div id="mask">
+
+                    </div>					
+                </div>			
+            </article>
+            <footer>
+                <div id='personaliza'>
+                    <div id='flip'>Subir foto, compartir,dar like y mucho mas!!!, Mas abajo en la pagina</div>
+                    <div id="panel">
+                        <div id="photoUpload">
+                            <span>Subir Foto</span>
+                            <form action="recursos/api/uploadFB.php" method="post" enctype="multipart/form-data">
+                                Elige tu Album o crea uno nuevo
+                                <div id="albumOld">
+                                    Albumes<select name="idAlbum" id="comboAlbum"> <option value=" " >-- Elige Album --</option> </select><br/>
+                                </div>
+                                <input type="button" id="newAlbumBox" value="Cambiar" ><br/>
+                                <div id="albumNew"> 
+                                    Nombre de Album:  <input type="text" name="albumName" /><br/>
+                                    Descripcion:  <input type="text" name="albumDescr" />
+                                </div>
+                                <br/>
+                                Descripcion de foto:
+                                <textarea name="message" id="message" rows="2" cols="40"></textarea><br>
+                                <input type="file" name="image" id="image"><br>
+                                <input type="submit" value="Update"> 
+                                <input type="hidden" id="tipoAlbum" name="tipoAlbum" value="old" />
+                            </form> 
+                        </div>
+                        <div id="socialFB">
+                            <span>Compartenos</span><br/><br/><br/>
+                            <div class="fb-like" data-href="https://galeriawoah.parseapp.com/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            <div class="fb-follow" data-href="https://www.facebook.com/GaleriaWoah" data-colorscheme="light" data-layout="box_count" data-show-faces="false"></div>
+                            <div class="fb-send" data-href="https://galeriawoah.parseapp.com/" data-colorscheme="light"></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

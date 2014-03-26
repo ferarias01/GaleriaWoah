@@ -1,0 +1,240 @@
+#body
+{
+    background-color: whitesmoke;
+}
+
+#warp
+{
+    margin: 0 auto;
+    background: whitesmoke;
+    width: 1000px;
+    height: 622px;
+    font-family: verdana;
+    border-color: black;
+}
+
+#banner
+{
+    background: url('../imagenes/baner.png');
+    width: 870px;
+    height: 100px;
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 60px;
+    float: left;
+}
+
+#loginfb {
+    background: whitesmoke;
+    width: 130px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    float: right;
+    position: relative;
+}
+
+#albumControl
+{
+    background: rgb(219, 72, 72);
+    width: 139px;
+    height: 32px;
+    margin: 0 auto;
+    float: right;
+    text-align: left;
+    position: relative;
+    top: -31px;
+    color: white;
+    font-size: 20px;
+
+}
+
+#album
+{
+    background: rgb(219, 72, 72);
+    width: 860px;
+    height: 32px;
+    margin: 0 auto;
+    float: right;
+    text-align: left;
+    position: relative;
+    top: -31px;
+}
+
+#album li
+{
+    display:inline-block;
+    margin-top: 3px;
+    margin-left: 7px;
+
+}
+
+#album a
+{
+    background: whitesmoke;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: auto;
+    border-radius: 3px;
+}
+
+#albumControl a{
+    text-decoration: none;
+    background: whitesmoke;
+    border-radius: 100%;
+    position: relative;
+    top: 3px;
+    color:black;
+}
+
+#albumControl a:active{
+    background: rgb(153, 22, 22);
+    color:white;
+}
+
+#bigphoto{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    width: 600px;
+    height: 470px;			
+}
+
+
+#bigphoto li{
+    width:600px;
+    height:470px;
+    background-size:inherit;
+    background-repeat:no-repeat;
+    background-position:center center;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    float:left;
+    margin-right:10px;
+    display:inline-block;
+}
+
+#bigphoto li:hover{
+    background-color:rgba(0, 0, 0, 0.51);
+}
+
+
+#thumbnails
+{
+    background: whitesmoke;
+    width: 340px;
+    height: 470px;
+    float: right;
+    margin: 15px;
+    overflow:scroll;
+}
+
+#thumbnails li
+{
+    display: inline-block;
+    margin: 25px 10px 3px 3px;
+    width: 90px;
+    height: 90px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid rgba(17, 17, 17, 1);
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: rgba(0, 0, 0, 1);
+}
+#mask{		
+    float:left;
+    height: 470px;
+}
+
+#mascara{
+    background: whitesmoke;
+    width: 600px;
+    height: 470px;	
+    float: left;
+    margin: 15px;
+    overflow:hidden;	
+}
+
+#personaliza
+{
+    background-color:whitesmoke;
+    width: 963px;
+    height: 24px;
+    position: absolute;
+    top: 628px;
+    left: 197px;
+}
+
+#panel,#flip
+{
+    padding: 2px;
+    text-align:center;
+    background-color:whitesmoke;
+    border:solid 1px #000000;
+}
+
+#panel
+{
+    padding: 24px;
+    position: absolute;
+    width: 913px;
+}
+
+#panel a
+{
+    background:whitesmoke;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: default;
+    border-radius: 10px;
+}
+
+#panel a:hover
+{
+    background:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#fbcontainer {
+    position: relative;
+    top: 10px;
+}
+
+#fotoPerfil {
+    max-width: 60px;
+    max-height: 60px;
+    position: relative;
+    left: 39px;
+    top: 15px;
+}
+#nombreUsuario {
+    width: 78px;
+    height: 50px;
+    position: relative;
+    top: -43px;
+}
+#maskalbum{
+    position: relative;
+    top: 36px;
+}
+
+#socialFB {
+    width: 300px;
+    float: right;
+    border: 1px solid;
+}
+
+#photoUpload{
+    float: left;
+    position: relative;
+    border: 1px solid;
+}
+
+#albumNew{
+    display: none;
+}
